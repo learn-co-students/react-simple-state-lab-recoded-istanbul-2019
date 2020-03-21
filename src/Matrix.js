@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Cell from './Cell'
+import {pattern} from './data'
+
+
 
 export default class Matrix extends Component {
   
@@ -17,5 +21,9 @@ export default class Matrix extends Component {
       </div>
     )
   }
-  
+
+}
+
+Matrix.defaultProps = {
+  values: pattern
 }
